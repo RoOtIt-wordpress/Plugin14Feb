@@ -1,0 +1,276 @@
+/**
+ * استایل‌های پنل مدیریت سیستم پیام‌رسانی
+ * 
+ * @package Messaging System
+ * @author RoOtIt-dev
+ * @version 1.0.0
+ * @since 2025-02-13
+ */
+
+/* ریست استایل‌ها */
+.msg-system-admin * {
+    box-sizing: border-box;
+}
+
+/* استایل‌های عمومی */
+.wrap {
+    margin: 20px;
+    max-width: 1200px;
+}
+
+/* تب‌ها */
+.nav-tab-wrapper {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0;
+}
+
+.nav-tab {
+    margin-right: 0.5em;
+    margin-left: 0;
+    padding: 10px 15px;
+    font-size: 14px;
+    line-height: 1.71428571;
+    font-weight: 600;
+    background: #f1f1f1;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    color: #555;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.nav-tab:hover,
+.nav-tab:focus {
+    background-color: #fff;
+    color: #444;
+}
+
+.nav-tab-active,
+.nav-tab-active:hover,
+.nav-tab-active:focus {
+    background: #fff;
+    border-bottom: 1px solid #fff;
+    color: #000;
+}
+
+/* جداول فرم */
+.form-table {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    margin-top: 20px;
+    border-spacing: 0;
+    width: 100%;
+    clear: both;
+}
+
+.form-table th {
+    vertical-align: top;
+    text-align: right;
+    padding: 20px;
+    width: 200px;
+    line-height: 1.3;
+    font-weight: 600;
+    color: #23282d;
+    border-bottom: 1px solid #eee;
+}
+
+.form-table td {
+    margin-bottom: 9px;
+    padding: 20px;
+    line-height: 1.3;
+    vertical-align: middle;
+    border-bottom: 1px solid #eee;
+}
+
+/* فیلدهای ورودی */
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.07);
+    background-color: #fff;
+    color: #32373c;
+    transition: 0.15s border-color ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #0073aa;
+    box-shadow: 0 0 2px rgba(0,115,170,0.8);
+    outline: none;
+}
+
+/* توضیحات */
+.description {
+    font-size: 13px;
+    margin: 2px 0 5px;
+    color: #666;
+}
+
+/* جدول گروه‌ها */
+#user-groups-table {
+    margin-top: 20px;
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    width: 100%;
+    border-spacing: 0;
+}
+
+#user-groups-table th {
+    padding: 12px;
+    text-align: right;
+    background: #f8f9fa;
+    border-bottom: 1px solid #ccd0d4;
+    font-weight: 600;
+}
+
+#user-groups-table td {
+    padding: 12px;
+    vertical-align: middle;
+    border-bottom: 1px solid #eee;
+}
+
+#user-groups-table input[type="text"] {
+    width: 100%;
+}
+
+/* دکمه‌ها */
+.button {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 2.15384615;
+    min-height: 30px;
+    margin: 0 5px;
+    padding: 0 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    white-space: nowrap;
+    box-sizing: border-box;
+    background: #f7f7f7;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 0 #ccc;
+    vertical-align: top;
+    transition: all 0.3s ease;
+}
+
+.button-primary {
+    background: #0073aa;
+    border-color: #006291;
+    color: #fff;
+    text-shadow: 0 -1px 1px #006291, 1px 0 1px #006291, 0 1px 1px #006291, -1px 0 1px #006291;
+    box-shadow: 0 1px 0 #006291;
+}
+
+.button-primary:hover,
+.button-primary:focus {
+    background: #006291;
+    border-color: #004f74;
+    color: #fff;
+}
+
+.remove-group {
+    color: #dc3232;
+}
+
+#add-group {
+    margin: 20px 0;
+}
+
+/* چک‌باکس */
+input[type="checkbox"] {
+    border: 1px solid #b4b9be;
+    background: #fff;
+    color: #555;
+    clear: none;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 0;
+    height: 16px;
+    margin: -4px 0 0 4px;
+    outline: 0;
+    padding: 0 !important;
+    text-align: center;
+    vertical-align: middle;
+    width: 16px;
+    min-width: 16px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+    transition: .05s border-color ease-in-out;
+}
+
+/* سلکت‌باکس */
+select[multiple] {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.07);
+}
+
+/* پیام‌های اعلان */
+.notice {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-right-width: 4px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+    margin: 5px 0 15px;
+    padding: 1px 12px;
+}
+
+.notice-success {
+    border-right-color: #46b450;
+}
+
+.notice-error {
+    border-right-color: #dc3232;
+}
+
+/* واکنش‌گرایی */
+@media screen and (max-width: 782px) {
+    .form-table th {
+        width: 100%;
+        display: block;
+    }
+    
+    .form-table td {
+        padding: 10px;
+        display: block;
+    }
+    
+    input[type="text"],
+    input[type="number"] {
+        max-width: 100%;
+    }
+    
+    select[multiple] {
+        width: 100%;
+    }
+
+    .button {
+        font-size: 14px;
+        padding: 6px 14px;
+        line-height: normal;
+        height: auto;
+        margin-bottom: 10px;
+    }
+}
+
+/* انیمیشن‌ها */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.notice {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.button:active {
+    transform: translateY(1px);
+}

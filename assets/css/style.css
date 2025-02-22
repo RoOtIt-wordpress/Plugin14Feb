@@ -1,0 +1,90 @@
+/**
+ * استایلهای اصلی سیستم پیامرسانی
+ * @author RoOtIt-dev
+ * @since 2025-02-13 07:33:38
+ */
+
+/* استایل های عمومی */
+.msg-system-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+/* گرید انتخاب گروه */
+.group-selector {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: -0.5rem;
+}
+
+.group-selector > * {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 calc(33.333% - 1rem);
+    flex: 0 0 calc(33.333% - 1rem);
+    margin: 0.5rem;
+}
+
+/* گرید پیوست ها */
+.attachment-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: -0.5rem;
+}
+
+.attachment-container > * {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 calc(50% - 1rem);
+    flex: 0 0 calc(50% - 1rem);
+    margin: 0.5rem;
+}
+
+/* نوار آمار */
+.msg-stats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: -0.5rem;
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.msg-stats > * {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 200px;
+    flex: 1 1 200px;
+    margin: 0.5rem;
+}
+
+/* ریسپانسیو */
+@media (max-width: 768px) {
+    .group-selector > * {
+        -ms-flex-preferred-size: calc(50% - 1rem);
+        flex-basis: calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .group-selector > * {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    }
+    
+    .attachment-container > * {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    }
+}
